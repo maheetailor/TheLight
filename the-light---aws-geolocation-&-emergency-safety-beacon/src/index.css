@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+}
+
+.font-doodle {
+  font-family: 'Patrick Hand', 'Gaegu', 'Caveat', cursive;
+}
+
+.font-cute {
+  font-family: 'Caveat', 'Patrick Hand', cursive;
+}
+
+.font-brand {
+  font-family: 'Outfit', 'Fredoka', sans-serif;
+}
+
+/* Star twinkle animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes floatGentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+/* Custom leaflet tweaks for crisp monochrome */
+.leaflet-container {
+  background: #09090b !important;
+  font-family: inherit !important;
+}
+
+.leaflet-bar a {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+  border-bottom: 1px solid #27272a !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #27272a !important;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "The Light - AWS Geolocation & Emergency Safety Beacon",
+  "description": "Tracking and Savings of Bills becAme easy after this app came!!",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
